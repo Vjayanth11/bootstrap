@@ -21,5 +21,43 @@
     <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
   </li>
 </ul>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+  Launch Sign Up
+</button>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="signupModalLabel">Sign up for free</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Sign up</button>
+          <p class="text-muted mt-2" style="font-size: 0.85rem;">
+            By clicking Sign up, you agree to the terms of use.
+          </p>
+        </form>
+        <hr>
+        <p class="text-center fw-semibold">Or use a third-party</p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-secondary"><i class="bi bi-google"></i> Sign up with Google</button>
+          <button class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Sign up with Facebook</button>
+          <button class="btn btn-outline-dark"><i class="bi bi-github"></i> Sign up with GitHub</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
